@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import ContactFilter from './ContactFilter';
@@ -61,16 +63,30 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div>
-        <h1>Phonebook</h1>
+      <Wrapper>
+        <Title>Phonebook</Title>
         <ContactForm onSubmit={this.addContact} />
 
-        <h2>Contacts</h2>
+        <Title>Contacts</Title>
         <ContactFilter value={filter} onChange={this.changeFilter} />
         <ContactList contacts={visibleContacts} onDelete={this.delContact} />
-      </div>
+      </Wrapper>
     );
   }
 }
+
+const Wrapper = styled.main`
+  padding: 20px;
+`;
+
+const Title = styled.h1`
+  font-family: 'Georgia', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+
+  color: white;
+`;
 
 export default App;

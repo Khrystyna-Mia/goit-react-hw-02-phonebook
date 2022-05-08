@@ -79,14 +79,14 @@ const Wrapper = styled.main`
   padding: 20px;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   font-family: 'Georgia', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: 0.02em;
 
-  color: whitesmoke;
+  color: white;
 `;
 
 export default App;

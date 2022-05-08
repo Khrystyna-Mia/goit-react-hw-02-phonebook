@@ -79,7 +79,7 @@ const Wrapper = styled.main`
   padding: 20px;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   font-family: 'Georgia', sans-serif;
   font-weight: 700;
   font-size: 20px;

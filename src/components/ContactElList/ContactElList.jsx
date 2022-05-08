@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import { Wrapper, Text, Span, Button } from './ContactElList.styled';
 
 const ContactElList = ({ name, number, onDelete }) => {
   return (
-    <div>
-      <p>{name}:</p>
-      <span>{number}</span>
-      <button type="button" onClick={onDelete}>
+    <Wrapper>
+      <Text>{name}:</Text>
+      <Span>{number}</Span>
+      <Button type="button" onClick={onDelete}>
         Delete
-      </button>
-    </div>
+      </Button>
+    </Wrapper>
   );
 };
 

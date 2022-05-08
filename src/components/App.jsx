@@ -86,7 +86,7 @@ const Title = styled.h1`
   line-height: 1.8;
   letter-spacing: 0.02em;
 
-  color: white;
+  color: whitesmoke;
 `;
 
 export default App;

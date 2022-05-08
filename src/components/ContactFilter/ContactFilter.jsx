@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Label, Input } from './ContactFilter.styled';
 import { nanoid } from 'nanoid';
 
 const ContactFilter = ({ value, onChange }) => {
@@ -6,9 +7,9 @@ const ContactFilter = ({ value, onChange }) => {
 
   return (
     <>
-      <label htmlFor={filterId}>Find contacts by name</label>
+      <Label htmlFor={filterId}>Find contacts by name</Label>
 
-      <input
+      <Input
         id={filterId}
         type="text"
         name="filter"
